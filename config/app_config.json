@@ -1,0 +1,5 @@
+{
+    "APP_LOG_FILE": "/usr/local/var/log/bbc_english/app.log",
+    "APP_PORT": ":5000",
+    "ARTICLE_PAGE_SIZE": 5
+}

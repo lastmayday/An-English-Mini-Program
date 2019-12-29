@@ -1,0 +1,8 @@
+{
+    "BASE_CONTENT_URL": "https://philippa-producer-cdn.api.bbci.co.uk/content",
+    "HOME_PATH": "/cps/learning_english/home",
+    "BASE_MEDIA_URL": "https://open.live.bbc.co.uk/mediaselector/5/select/version/2.0/format/json/mediaset/mobile-phone-main/vpid/",
+    "SUFFIX_MEDIA_PATH": "/transferformat/hls/",
+    "DOWNLOAD_PATH": "/tmp/",
+    "CRAWLER_LOG_FILE": "/usr/local/var/log/bbc_english/crawler.log"
+}
