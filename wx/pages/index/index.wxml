@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<view class="final-info">
+  <view class="final-info-p"> We are sorry to announce that we decide to stop this service from now on :-(. </view>
+  <view class="final-info-p"> If you are interested in this program, you can find it's source code on Github: <text selectable>https://github.com/lastmayday/An-English-Mini-Program </text> </view>
+  <view class="final-info-p"> Thank you all! </view>
+</view>
+<view class="container">
+  <view class="articles-box">
+  <scroll-view 
+    scroll-y
+    bindscrolltolower="bindNextPageArticles"
+    class="articles">
+    <view class="article" 
+      wx:for="{{articles}}" 
+      wx:key="item.Id"
+      data-id="{{item.Id}}"
+      bindtap="bindArticleDetail">
+      <view class="name">{{item.Name}}</view>
+      <view class="time">{{item.LastUpdated}}</view>
+      <view class="summary">{{item.Summary}}</view>
+    </view>
+    <view wx:if="{{loading}}" class="loading">loading...</view>
+    <view wx:if="{{end}}" class="end">no more!</view>
+  </scroll-view>
+  </view>
+</view>
+

@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<import src="../../wxParse/wxParse.wxml"/>
+<view class="container">
+  <view class="article">
+    <view class="name">{{article.Name}}</view>
+    <view class="time">{{article.LastUpdated}}</view>
+    <video
+      custom-cache="{{false}}"
+      style="height:{{height}}"
+      id="article-video"
+      src="{{article.OssUrl}}"></video>
+    <template is="wxParse" data="{{wxParseData:content.nodes}}"/>
+    <view class="origin">
+      <text selectable>{{article.OriginUrl}}</text>
+    </view>
+  </view>
+</view>

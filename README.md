@@ -28,6 +28,7 @@ From server 2, it reads metadata from the database and provides APIs for the min
 - `internal`: the crawler
 - `scripts`: scripts to run crawler or APP
 - `web`: APIs for APP
+- `wx`: Wechat mini program
 
 ## Mini program screenshoots
 
